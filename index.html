@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blogin</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon">
+</head>
+
+<body>
+
+    <div class="main-screen" onclick="toggleMenu()">
+        <ul class="main-nav clean-list flex">
+            <li><a href="#">Journal</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Work</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </div>
+
+    <div class="read-more-modal">
+        <div class="modal-info">
+            <h1 class="modal-header">Join us to get access to the latest stories!</h1>
+            <label for="email">Email Address</label>
+            <input type="email" id="email" class="modal-email" placeholder="Email Address">
+            <button type="button" class="register-button">Register</button>
+            <button onclick="toggleModal()" type="button" class="close-button">Close</button>
+        </div>
+    </div>
+    <header class="main-header">
+        <div class="header-container main-layout  flex flex-space-between flex-align-center">
+
+            <h1 class="logo">Blogin<span class="logo-last-letter">.</span></h1>
+
+            <ul class="main-nav clean-list flex">
+                <li><a href="#">Journal</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Work</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+
+            <button class="menu" aria-label="Main Menu" onclick="toggleMenu()">
+                <svg width="100" height="50" viewBox="0 0 100 100">
+                    <path class="line line1"
+                        d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058" />
+                    <path class="line line2" d="M 20,50 H 80" />
+                    <path class="line line3"
+                        d="M 20,70.999954 H 80.000231 C 80.000231,70.999954 94.498839,71.182648 94.532987,33.288669 94.543142,22.019327 90.966081,18.329754 85.259173,18.331003 79.552261,18.332249 75.000211,25.000058 75.000211,25.000058 L 25.000021,74.999942" />
+                </svg>
+            </button>
+        </div>
+    </header>
+
+    <main class="main-content blogs-container main-layout">
+        <div class="post flex">
+            <img src="./images/001.jpg" class="post-image">
+            <div class="post-text-area flex">
+                <div class="post-title">Duis aute irure dolor in
+                    henderit in voluptate.</div>
+                <div class="post-info">
+                    <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commo
+                        doconsequat, sunt in
+                        culpa qui officia deserunt mollit anim id est laborum.</p>
+
+                    <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                        pariatur...</p>
+                </div>
+                <button onclick="toggleModal()" class="post-more-info-btn"><a href="#">Continue Reading <span
+                            class="right-arrow">→</span></a></button>
+            </div>
+        </div>
+
+        <div class="post flex">
+            <img src="./images/002.jpg" class="post-image">
+            <div class="post-text-area flex">
+                <div class="post-title">Duis aute irure dolor in
+                    henderit in voluptate.</div>
+                <div class="post-info">
+                    <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commo
+                        doconsequat, sunt in
+                        culpa qui officia deserunt mollit anim id est laborum.</p>
+
+                    <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                        pariatur...</p>
+                </div>
+                <button onclick="toggleModal()" class="post-more-info-btn"><a href="#">Continue Reading <span
+                            class="right-arrow">→</span></a></button>
+            </div>
+        </div>
+
+        <div class="post flex">
+            <img src="./images/003.jpg" class="post-image">
+            <div class="post-text-area flex">
+                <div class="post-title">Duis aute irure dolor in
+                    henderit in voluptate.</div>
+                <div class="post-info">
+                    <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commo
+                        doconsequat, sunt in
+                        culpa qui officia deserunt mollit anim id est laborum.</p>
+
+                    <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                        pariatur...</p>
+                </div>
+                <button onclick="toggleModal()" class="post-more-info-btn"><a href="#">Continue Reading <span
+                            class="right-arrow">→</span></a></button>
+            </div>
+        </div>
+
+        <nav class="posts-navigation flex flex-space-between flex-align-center">
+            <a class="previous-page flex flex-align-center"><img src="./images/arrowleft.jpg">Previous</a>
+            <a class="next-page flex flex-align-center">Next<img src="./images/arrowright.jpg"></a>
+        </nav>
+    </main>
+
+    <footer class="main-footer">
+        <div class="footer-container flex flex-align-center">
+            <div class="logo">Blogin<span class="logo-last-letter">.</span></div>
+            <small>© 2014 Blogin.com - All Rights Reserved - Find more free Templates at
+                <span>Pixelhint.com</span></small>
+            <div class="social-container">
+                <ul class="social-nav clean-list inline-flex flex-align-center ">
+                    <li class="social-logo facebook-logo"><a href="#"><img src="./images/facebooklogo.png"></a></li>
+                    <li class="social-logo twitter-logo"><a href="#"><img src="./images/twitterlogo.png"></a></li>
+                    <li class="social-logo behance-logo"><a href="#"><img src="./images/Behancelogo.png"></a></li>
+                    <li class="social-logo dribble-logo"><a href="#"><img src="./images/Dribblelogo.png"></a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+</body>
+
+<script>
+    function toggleMenu() {
+        const x = document.querySelector('.menu');
+        x.classList.toggle('opened');
+        document.body.classList.toggle('opened')
+        x.setAttribute('aria-expanded', x.classList.contains('opened'))
+    }
+
+    function toggleModal() {
+        document.querySelector('.read-more-modal').classList.toggle('toggle-modal')
+    }
+</script>
+
+</html>
