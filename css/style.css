@@ -27,6 +27,8 @@
     src: url(../fonts/fa/fa-brands-400.ttf);
 }
 
+
+
 .fa {
     font-family: fa;
     transition: color .2s;
@@ -155,6 +157,8 @@ a:hover {
     padding: 0 2em;
     align-self: flex-start;
     cursor: pointer;
+    transition: padding .3s;
+
 }
 
 .blogs-container .post-more-info-btn a {
@@ -162,7 +166,7 @@ a:hover {
     font-weight: 700;
     letter-spacing: 0.48px;
     line-height: 1.25;
-    transition: all .2s;
+    transition: all .3s;
     font-family: Lato, sans-serif;
 }
 
@@ -172,6 +176,13 @@ a:hover {
 
 .blogs-container .post-more-info-btn:hover a {
     color: #58c93a;
+    padding-inline-end: 1em;
+}
+
+.blogs-container .post-more-info-btn:hover::after {
+    content: " →";
+    color: #58c93a;
+    position: absolute;
 }
 
 .blogs-container .post-text-area p:last-of-type {
