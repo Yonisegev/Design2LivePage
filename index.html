@@ -11,13 +11,16 @@
 
 <body>
 
-    <div class="main-screen" onclick="toggleMenu()">
+    <div onclick="toggleMenu()" class="main-screen">
         <ul class="main-nav clean-list flex">
             <li><a href="#">Journal</a></li>
             <li><a href="#">About</a></li>
             <li><a href="#">Work</a></li>
             <li><a href="#">Contact</a></li>
+
         </ul>
+
+
     </div>
 
     <div class="read-more-modal">
@@ -35,7 +38,15 @@
             <h1 class="logo">Blogin<span class="logo-last-letter">.</span></h1>
 
             <ul class="main-nav clean-list flex">
-                <li><a href="#">Journal</a></li>
+                <li class="active-tab dropdown">
+                    <a href="#">Journal</a>
+                    <div class="dropdown-content">
+                        <a href="#">October 2016</a>
+                        <a href="#">January 2017</a>
+                        <a href="#">April 2017</a>
+                        <a href="#">July 2017</a>
+                    </div>
+                </li>
                 <li><a href="#">About</a></li>
                 <li><a href="#">Work</a></li>
                 <li><a href="#">Contact</a></li>
@@ -58,14 +69,16 @@
             <img src="./images/001.jpg" class="post-image">
             <div class="post-text-area flex">
                 <div class="post-title">Duis aute irure dolor in henderit in voluptate.</div>
-                <div class="post-info">
-                    <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commo doconsequat, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 
-                    <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur...
-                    </p>
-                </div>
-                <button onclick="toggleModal()" class="post-more-info-btn"><a href="#">Continue Reading <span
-                            class="right-arrow">→</span></a></button>
+                <p class="post-info">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                    ex ea commo
+                    doconsequat, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+                <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                    pariatur...
+                </p>
+                <button onclick="toggleModal()" class="post-more-info-btn"><a href="#">Continue Reading</a></button>
+
             </div>
         </div>
 
@@ -73,14 +86,15 @@
             <img src="./images/002.jpg" class="post-image">
             <div class="post-text-area flex">
                 <div class="post-title">Duis aute irure dolor in henderit in voluptate.</div>
-                <div class="post-info">
-                    <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commo doconsequat, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 
-                    <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur...
-                    </p>
-                </div>
-                <button onclick="toggleModal()" class="post-more-info-btn"><a href="#">Continue Reading <span
-                            class="right-arrow">→</span></a></button>
+                <p class="post-info">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                    ex ea commo
+                    doconsequat, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+                <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                    pariatur...
+                </p>
+                <button onclick="toggleModal()" class="post-more-info-btn"><a href="#">Continue Reading</a></button>
             </div>
         </div>
 
@@ -88,14 +102,15 @@
             <img src="./images/003.jpg" class="post-image">
             <div class="post-text-area flex">
                 <div class="post-title">Duis aute irure dolor in henderit in voluptate.</div>
-                <div class="post-info">
-                    <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commo doconsequat, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 
-                    <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur...
-                    </p>
-                </div>
-                <button onclick="toggleModal()" class="post-more-info-btn"><a href="#">Continue Reading <span
-                            class="right-arrow">→</span></a></button>
+                <p class="post-info">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                    ex ea commo
+                    doconsequat, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+                <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                    pariatur...
+                </p>
+                <button onclick="toggleModal()" class="post-more-info-btn"><a href="#">Continue Reading</a></button>
             </div>
         </div>
 
@@ -112,17 +127,17 @@
                 <span>Pixelhint.com</span></small>
             <div class="social-container">
                 <ul class="social-nav clean-list inline-flex flex-align-center ">
-                    <li class="social-logo facebook-logo">
-                        <a href="#"><img src="./images/facebooklogo.png"></a>
+                    <li class="social-logo facebook-logo fa facebook">
+                        <a href="#"></a>
                     </li>
-                    <li class="social-logo twitter-logo">
-                        <a href="#"><img src="./images/twitterlogo.png"></a>
+                    <li class="social-logo twitter-logo fa twitter">
+                        <a href="#"></a>
                     </li>
-                    <li class="social-logo behance-logo">
-                        <a href="#"><img src="./images/Behancelogo.png"></a>
+                    <li class="social-logo behance-logo fa behance">
+                        <a href="#"></a>
                     </li>
-                    <li class="social-logo dribble-logo">
-                        <a href="#"><img src="./images/Dribblelogo.png"></a>
+                    <li class="social-logo dribble-logo fa dribble">
+                        <a href="#"></a>
                     </li>
                 </ul>
             </div>
